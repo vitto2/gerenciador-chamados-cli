@@ -36,7 +36,7 @@ Pré-requisito: Python 3.10 ou superior.
 
 ```bash
 # Clone o repositório
-git clone https://github.com/seu-usuario/sistema-chamados-cli.git
+git clone https://github.com/vitto2/sistema-chamados-cli.git
 
 # Acesse a pasta
 cd sistema-chamados-cli
