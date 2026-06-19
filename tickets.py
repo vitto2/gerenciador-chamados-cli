@@ -39,10 +39,9 @@ def show_tickets():
             )
 
 
-
 def search_tickets():
    tickets = database.tickets
-   id = input("\nInsira o ID do ticket: ")
+   id = int(input("\nInsira o ID do ticket: "))
 
    ticket = [ticket for ticket in tickets if ticket["id"] == id]
-   print(f"{ticket}")
+   print(f"\n{ticket}")
