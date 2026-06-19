@@ -18,6 +18,8 @@ def main():
                 tickets.open_ticket()
           case "2": 
                 tickets.show_tickets()
+          case "3": 
+                tickets.search_tickets()
           case "0": 
            break
     
