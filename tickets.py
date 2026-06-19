@@ -12,8 +12,8 @@ def open_ticket():
   ticket = { 
     "title": title, 
     "describe": desc, 
-    "Applicant": applicant, 
-    "Priorit": priorit,
+    "applicant": applicant, 
+    "priorit": priorit,
     "id": utils.generate_id(),
     "date": utils.generate_date(),
     "status": "Open"
@@ -23,7 +23,18 @@ def open_ticket():
 
 
 def show_tickets():
-    if len(database.tickets) == 0: 
+    tickets = database.tickets
+    if len(tickets) == 0: 
         print("Não há chamados registrados no momento.")
     else: 
-      print(database.tickets)
+      for ticket in database.tickets: 
+         for ticket in database.tickets:
+            print(
+                f"\nID: {ticket['id']}\n"
+                f"Title: {ticket['title']}\n"
+                f"Describe: {ticket['describe']}\n"
+                f"Applicant: {ticket['applicant']}\n"
+                f"Priority: {ticket['priorit']}\n"
+                f"Date: {ticket['date']}\n"
+                f"Status: {ticket['status']}\n\n"
+            )
