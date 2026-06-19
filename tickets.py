@@ -25,7 +25,7 @@ def open_ticket():
 def show_tickets():
     tickets = database.tickets
     if len(tickets) == 0: 
-        print("Não há chamados registrados no momento.")
+        print("Não há chamados registrados no momento.\n")
     else: 
       for ticket in database.tickets: 
          for ticket in database.tickets:
