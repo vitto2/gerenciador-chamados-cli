@@ -23,4 +23,7 @@ def open_ticket():
 
 
 def show_tickets():
-    print(database.tickets)
+    if len(database.tickets) == 0: 
+        print("Não há chamados registrados no momento.")
+    else: 
+      print(database.tickets)

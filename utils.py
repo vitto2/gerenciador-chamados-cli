@@ -1,10 +1,9 @@
-import uuid
+import random
 from datetime import date
 
 def generate_id(): 
-      id = str(uuid.uuid4())
+      id = random.randint(1000,9999)
       return id
-
 
 def generate_date(): 
       today = date.today()
